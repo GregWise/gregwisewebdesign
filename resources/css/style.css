@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*END GLOBAL RESET*/
+html, body, main {
+  height: 100%; }
+
+body {
+  background: url("../images/stripes.png");
+  font-family: 'Raleway', sans-serif;
+  line-height: 1; }
+
+/*VARIABLES*/
+/*HEADINGS AND FONTS*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif; }
+
+h1 {
+  color: #bcbcbc;
+  font-size: 2.7em;
+  font-weight: 400; }
+
+h2 {
+  color: #3299bb;
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 10px; }
+
+h3 {
+  color: #424242;
+  font-size: 2.5em;
+  font-weight: 400; }
+
+h4 {
+  color: #e9e9e9;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px; }
+
+a {
+  color: #e9e9e9; }
+
+a:hover {
+  color: #d0d0d0; }
+
+/*NAV*/
+.navbar {
+  margin-bottom: 0;
+  -webkit-box-shadow: 0 1px 10px 2px #000000;
+  box-shadow: 0 1px 10px 2px #000000; }
+
+.navbar ul li {
+  padding-right: 10px; }
+
+/*SECTIONS*/
+section {
+  margin-top: 50px; }
+
+/*HOME SECTION*/
+#home {
+  height: 100%; }
+
+.main-splash {
+  height: 100%; }
+
+.dark-shadow {
+  margin-top: 30px;
+  max-width: 200px; }
+
+.white-shadow {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,7db9e8+100&0.2+0,0+100 */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.2) 0%, rgba(125, 185, 232, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.2) 0%, rgba(125, 185, 232, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, rgba(125, 185, 232, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#007db9e8', GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+/*SLIDER FOR PORTFOLIO*/
+#sites {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%; }
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+  width: 100%; }
+
+.carousel-caption {
+  display: block;
+  position: relative;
+  color: #e9e9e9;
+  margin: 0;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  vertical-align: top;
+  height: auto;
+  padding: 20px; }
+
+.carousel-caption ul li {
+  margin: 10px 0; }
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+  top: 180px; }
+
+/*CONTACT*/
+label {
+  color: #e9e9e9;
+  padding: 5px 0 10px 0; }
+
+.form-group {
+  text-align: left; }
+
+.btn-success {
+  color: #fff;
+  background-color: #3299bb;
+  border-color: #3299bb; }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  h1 {
+    font-size: 5em; }
+
+  h2 {
+    font-size: 1.5em;
+    margin-top: 10px; }
+
+  .dark-shadow {
+    margin-top: 40px;
+    max-width: 300px; } }
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 7.5em; }
+
+  h2 {
+    font-size: 2.5em;
+    margin-top: 30px; }
+
+  h4 {
+    color: #e9e9e9;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.05em; }
+
+  .dark-shadow {
+    margin-top: 50px;
+    max-width: 500px; }
+
+  .carousel-caption {
+    padding: 40px;
+    position: absolute;
+    display: inline-table;
+    left: 15%; } }
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+
+/*# sourceMappingURL=style.css.map */
