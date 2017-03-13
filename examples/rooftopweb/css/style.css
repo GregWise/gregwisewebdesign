@@ -1,0 +1,698 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 14:26:34 Nov 7, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:15:10 Feb 22, 2017.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+
+html, body {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+body { position: relative; }
+a { text-decoration:none;
+	color: #000; }
+a:hover { text-decoration:none; } 
+.below-the-fold { 
+	background-color: #fff; 
+	margin-top: 0;
+	height: 100%;
+}
+.primary-color {
+	background-color: #26ADE4;
+}
+.secondary-color { background-color: #4DBCE9; }
+
+.accent-color { color:#D1E751; }
+
+/*Navbar*/
+nav {
+    background: #f5b335;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+.nav-up {
+  top: -40px;
+}
+
+.navbar-nav>li.first { 
+	padding: 10px 0; 
+	width: 13%;
+}
+
+.nav {
+	color:#000;
+	width: 100%;
+}
+.navbar-default { border: none; }
+
+.navbar-nav{ margin: 0; }
+.navbar-nav>li {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+	background: #f8f8f8;
+	cursor: pointer;
+	width: 100%;
+	
+}
+.navbar-nav>li.divider {
+    padding: 28px 20px;
+	display: none;
+}
+.rtw-nav { padding: 0; }
+.navbar-brand { height: 75px; }
+.navbar-nav>li a.menu-item {
+    padding: 30px 20px 27px 20px;
+	color: #000;
+	display: inline-block;
+	width: 100%;
+}
+.navbar-nav>li a.menu-item:hover {	
+	background: #D1E751;
+	color: #000;
+	border-bottom: 3px solid #000;
+	-webkit-transition: background 500ms linear;
+    -moz-transition: background 500ms linear;
+    -o-transition: background 500ms linear;
+    -ms-transition: background 500ms linear;
+    transition: background 500ms linear;
+}
+.navbar-nav>li a.hightlight { 
+	background: #D1E751;
+	border-bottom: 3px solid #D1E751;
+	color: #000;
+}
+
+.navbar-nav>li a.hightlight:hover {	
+	background: #000;
+	color: #fff;
+	-webkit-transition: background 500ms linear;
+    -moz-transition: background 500ms linear;
+    -o-transition: background 500ms linear;
+    -ms-transition: background 500ms linear;
+    transition: background 500ms linear;
+}
+
+/*Titles*/
+.titles-primary {
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	text-transform:uppercase;
+	font-weight: bold;	
+    letter-spacing: 0.2em;
+}
+.titles-secondary { 
+	color:#fff;
+	font-family: 'Playfair Display', serif;
+	text-transform:uppercase;
+	font-weight: bold;
+	margin-top: 0;
+    letter-spacing: 0.2em;
+}
+
+.titles-content {
+    font-size: 2.3em;
+    margin-bottom: 50px;
+    margin-top: 0;
+    letter-spacing: 0.1em;
+}
+/*Top Section*/
+.jumbotron { 
+	position: relative;
+    height: 100%;
+    width: 100%;
+	margin-bottom: 0;
+	text-align: center;
+	
+}
+.jumbotron .center-vertical { 
+	position: relative;
+ 	margin-top:75px;
+} 
+.jumbotron .container h1.titles-primary { 
+	font-size: 2.8em; 
+	color: #fff;
+	line-height:1em;
+	margin:0;
+}
+.jumbotron .container h2.titles-secondary { 
+	letter-spacing: 6px;
+	font-size: 2.63em;
+	line-height: 1em;
+	font-weight: normal;
+    color: #D1E751;
+}
+.jumbotron .container span.titles-secondary {
+	font-size: 1.3em;
+	display: block;
+	font-weight: normal;
+	text-transform: none;
+	max-width: 600px
+}
+
+.jumbotron hr {
+	max-width: 600px;
+    text-align: left;
+    display: block;
+    margin: 60px 0 20px 0;
+    border-top: 5px solid #000;
+}
+/*END Top Section*/
+
+/*Return to Top*/
+
+span.top-return {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    color: #4DBCE9;
+    top: inherit;
+    font-size: 40px;
+}
+
+span.top-return:hover {	
+	color:#D1E751;
+	-webkit-transition: color 1000ms linear;
+    -moz-transition: color 1000ms linear;
+    -o-transition: color 1000ms linear;
+    -ms-transition: color 1000ms linear;
+    transition: color 1000ms linear;
+}
+/*END Return to Top*/
+
+
+/*
+==================================================
+
+COMMON STYLES
+
+==================================================
+*/
+
+.height-full { height: 100%; }
+
+p { 
+	font-size: 1.25em;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 200;
+    margin: 0 0 15px;
+}
+
+section {
+    padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+/* FEATURED BOX */
+
+.featured-box {
+	background: #000;
+	color: #fff;
+}
+.sub{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+}
+.sub sup{
+    font-size: 0.5em;
+    display: inline-block;
+	top: 0;
+}
+#price .sub{ text-decoration: line-through; }
+.main{
+	font-size: 5em;
+    text-align: center;
+    display: block;
+	line-height: 1em;
+	margin-bottom: 15px;
+}
+.main sup{
+    font-size: 0.5em;
+    display: inline-block;
+	top: 0;
+}
+/* END FEATURED BOX */
+
+.padding-0 { padding: 0; }
+
+/*
+==================================================
+
+END COMMON STYLES
+
+==================================================
+*/
+
+
+/*
+==================================================
+
+FASTER SMARTE EASIER ALL YOU SECTION
+
+==================================================
+*/
+video::-webkit-media-controls-start-playback-button {
+  	display: none;
+}
+section#video-section { 
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+	padding: 10% 0; 
+}
+section#video-section .content-section { 
+	position: relative;
+	z-index: 1;
+}
+section#video-section h4 {
+    display: block;
+    text-align: right;
+    font-size: 25px;
+	margin-top: 45px;
+}
+
+ span.inner-circle {
+    border: 2px solid #fff;
+    width: 160px;
+    height: 160px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+	text-decoration:none;
+	font-size: 1.5em;
+	color: #fff;
+    border-radius: 50%;
+	-webkit-transition: background-color 300ms linear, border 300ms linear, color 300ms linear;
+    -moz-transition: background-color 300ms linear, border 300ms linear, color 300ms linear;
+    -o-transition: background-color 300ms linear, border 300ms linear, color 300ms linear;
+    -ms-transition: background-color 300ms linear, border 300ms linear, color 300ms linear;
+    transition: background-color 300ms linear, border 300ms linear, color 300ms linear;
+}
+ span.inner-circle:hover {
+    background-color: rgba(147, 179, 32, 0.6);
+}
+
+.center-visit { 
+	display: inline-block;
+	margin: 0 auto;
+}
+
+/*---------- 2.2 VIDEO SECTION ----------*/
+    #background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background-size: cover;
+      }
+	  
+	 
+  /*---------- END 2.1 VIDEO SECTION ----------*/
+  
+
+/*
+==================================================
+
+END FASTER SMARTE EASIER ALL YOU SECTION
+
+==================================================
+*/
+/*
+==================================================
+
+FEATURES SECTION
+
+==================================================
+*/
+
+#features {
+	color: #fff;
+	text-align:center;
+}
+
+.center-col {   	
+	border: 1px solid #26ADE4;
+    border-top: 0;
+    border-bottom: 0;
+	padding-bottom: 30px;
+}
+.number-lg span {
+	font-size: 7em;
+	font-weight: 400;
+}
+span.feature-lg {
+    font-size: 2em;
+	font-weight: 400;
+	display: block;
+}
+.icon-feature{ padding: 38px 0 10px 0; }
+/*
+==================================================
+
+END FEATURES SECTION
+
+==================================================
+*/
+/*
+==================================================
+
+DEVICES SECTION
+
+==================================================
+*/
+
+section#devices { background:#FFF; }
+
+/*
+==================================================
+
+END DEVICES SECTION
+
+==================================================
+*/
+/*
+==================================================
+
+PRICING SECTION
+
+==================================================
+*/
+
+section#price {
+	padding-top:0;
+	padding-bottom:0;
+	text-align: center;
+}
+section#price h3 {
+	font-size: 3em;
+    text-align:center;
+}
+section#price h4 { 
+	font-size: 2em; 
+    text-align:center;
+}
+	
+.featured-box {
+    padding: 80px 50px;
+}
+.title-container {
+    padding: 50px 0;
+}
+.title-container h3{
+	margin-bottom: 25px;
+}
+.main sup.cad { 
+	font-size:0.2em; 
+	top: 10px;
+}
+
+/*
+==================================================
+
+END PRICING SECTION
+
+==================================================
+*/
+
+/*
+==================================================
+
+END FEATURES CONTINUED SECTION
+
+==================================================
+*/
+
+section#features-continued {
+	background: #FFF;
+}
+section#features-continued .col-md-4 {
+	padding: 10px 0;
+}
+#features-continued .glyphicon {
+    font-size: 1.5em;
+    padding: 2px 10px 10px 0;
+    color: #D1E751;
+    display: inline-block;
+    float: left;
+}
+.feature {
+	font-size: 1.15em;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+/*
+==================================================
+
+END FEATURES CONTINUED SECTION
+
+==================================================
+*/
+/*
+==================================================
+
+ABOUT US SECTION
+
+==================================================
+*/
+
+#about-us {
+	padding-top:0;
+	padding-bottom:0;
+}
+
+#about-us .blurb {
+	padding: 50px 20px;
+    color: #fff;
+    height: auto;
+}
+#about-us .featured-box {
+    padding: 129px 50px 130px 50px;
+    height: 385px;
+}
+/*
+==================================================
+
+END ABOUT US SECTION
+
+==================================================
+*/
+
+/*
+==================================================
+
+END CONTACT US SECTION
+
+==================================================
+*/
+section#contact-us {
+	background-image:url(../images/roof-514256_1920.jpg);
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	}
+section#contact-us .form-horizontal .form-group { 
+	margin-left:0;
+	margin-right:0;
+	}
+section#contact-us h3.titles-content {
+	margin-bottom: 0;
+}
+.rtw-label { font-size: 1em; }
+.rtw-control {
+	display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 35px 0;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: none;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.text-danger {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.btn-form {
+	color: #000;
+	background-color: #D1E751;
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 15px 110px;
+    font-size: 1.1em;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.btn-form:hover {
+	color: #fff;
+	background-color: #000;
+}
+/*
+==================================================
+
+END CONTACT US SECTION
+
+==================================================
+*/
+
+footer {
+	color: #fff;
+    background-color: #000;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+}
+
+footer.container-fluid a {
+    color: #fff;
+}
+footer span {
+	padding: 20px
+}
+
+/*
+==================================================
+
+RESPONSIVE
+
+==================================================
+*/
+
+	/*==========  Splash  ==========*/
+	@media only screen and (min-height : 640px) {
+        .jumbotron {	
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			height:100%;
+			width: 100%;
+			padding: 24.15519399249061 5% ;
+	    }
+		.below-the-fold { 
+			background-color: #fff; 
+			margin-top: 100%;
+			height: 100%;
+			z-index: 1000;
+			-webkit-box-shadow: 0 0px 200px 0 #000000;
+			-moz-box-shadow: 0 0px 200px 0 #000000;
+			-ms-box-shadow: 0 0px 200px 0 #000000;
+			box-shadow: 0 0px 200px 0 #000000;
+		}
+	}
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+		.jumbotron .container { width: 100%; }
+		.jumbotron .container h1.titles-primary { font-size: 2.8em; }
+		.jumbotron .container h2.titles-secondary { font-size: 2.63em; }        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+		.jumbotron .container h1.titles-primary { font-size: 5em; }
+		.jumbotron .container h2.titles-secondary { font-size: 2.63em; }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+		.jumbotron .container { width: 1170px; }
+		.jumbotron .container h1.titles-primary { font-size: 7em; }
+		.jumbotron .container h2.titles-secondary { font-size: 2.63em; }
+		section#pricing h3 { font-size: 4em; }
+		section#pricing { text-align: left; }
+		
+		.navbar-nav>li.divider {
+			display: inline-block;
+		}
+		.navbar-nav>li { width: initial; }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+		#features { text-align: left; }
+		span.feature-lg {
+			margin-top:36px;			
+		}
+		.number-lg {
+			text-align: right;
+		}
+		.jumbotron .center-vertical { 
+		  position: absolute;
+		  top: 50%;
+		  left:50%;
+		  transform: translate(-50%,-50%);
+		} 
+		.jumbotron {
+			text-align: left;
+		}
+		.jumbotron .container h1.titles-primary { 
+			font-size: 11em; 
+		}
+		.jumbotron .container h2.titles-secondary { 
+			letter-spacing: 6px;
+			font-size: 4.55em;
+		}
+
+		.title-container{
+			padding: 125px 50px 0 50px
+		}
+		section#pricing h3{	font-size: 4em;
+			text-align:left;
+		}
+		section#pricing h4 { 
+			font-size: 2em; 
+			text-align:left;
+		}
+		#about-us .blurb {
+		    padding: 78px 50px;
+			height: 385px; 
+		}
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+		.navbar-nav>li {
+
+		}
+    }
+
+
+
